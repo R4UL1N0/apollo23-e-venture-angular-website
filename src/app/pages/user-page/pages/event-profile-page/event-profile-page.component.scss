@@ -1,0 +1,53 @@
+.event-container {
+    position: relative;
+    flex-direction: column;
+}
+
+.event-header-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 1.5rem;
+
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+.back-btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    aspect-ratio: 1;
+
+    img {
+        height: 100%;
+    }
+}
+
+.list {
+
+    &--options {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        text-align: center;
+        gap: 0.3rem;
+    }
+
+    &--unit {
+        background-color: lightgrey;
+        font-size: 1.4rem;
+        padding: 0.5rem;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        cursor: pointer;
+    }
+
+    
+}
+
+.selected {
+    background-color: white;
+}

@@ -1,0 +1,51 @@
+.events-content--container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    font-family: monospace;
+}
+
+.current-events {
+
+    &--text {
+        text-align: center;
+
+        h2 {
+
+        }
+
+        p {
+
+        }
+    }
+
+    &--content {
+        width: 100%;
+        // display: grid;
+        // grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.past-events {
+
+    &--text {
+        text-align: center;
+
+        h2 {
+
+        }
+
+        p {
+
+        }
+    }
+
+    &--content {
+        width: 100%;
+    }
+}
+
+.events-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}

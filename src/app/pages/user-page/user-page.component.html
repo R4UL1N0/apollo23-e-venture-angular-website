@@ -1,0 +1,41 @@
+<div class="single-page center night-sky-background">
+
+    <div class="info--container">
+
+        <div class="info--sidebar">
+            <div class="info--sidebar-title-user">
+                <h3>Ready to embrace another E-Venture?</h3>
+            </div>
+
+            <div class="info--sidebar-options">
+
+                <div class="unit" (click)="goTo('feed')" [class.selected]="selectedRoute === 'feed'">
+                    <div class="circle small"></div>
+                    <div>Feed</div>
+                </div>
+
+                <div class="unit" (click)="goTo('profile')" [class.selected]="selectedRoute === 'profile'">
+                    <div class="circle small"></div>
+                    <div>Profile</div>
+                </div>
+    
+                <div class="unit" (click)="goTo('events')" [class.selected]="selectedRoute === 'events'">
+                    <div class="circle small"></div>
+                    <div>Events</div>
+                </div>
+
+                <div class="unit" (click)="goTo('map')" [class.selected]="selectedRoute === 'map'">
+                    <div class="circle small"></div>
+                    <div>Map</div>
+                </div>
+    
+            </div>
+
+        </div>
+        <div class="content-wrapper">
+            <div class="info--content">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>
+</div>

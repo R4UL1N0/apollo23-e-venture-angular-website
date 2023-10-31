@@ -1,0 +1,38 @@
+<div class="events-content--container scroll">
+
+    <div class="current-events">
+
+        <div class="current-events--text">
+            <div><h2>Current Events</h2></div>
+            <div><p>★</p></div>
+        </div>
+
+        <div class="current-events-content">
+
+            <div class="events-list">
+                <div *ngFor="let u of numberRange(0, 2)">
+                    <app-event-unit></app-event-unit>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="past-events">
+
+        <div class="past-events--text">
+            <div><h2>Past Events</h2></div>
+            <div><p>★</p></div>
+        </div>
+
+        <div class="past-events-content">
+
+            <div class="events-list">
+                <div *ngFor="let u of numberRange(0, 14)">
+                    <app-event-unit></app-event-unit>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

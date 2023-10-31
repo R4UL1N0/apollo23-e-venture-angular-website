@@ -1,0 +1,36 @@
+.events-page {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+}
+
+.events-search-bar-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 2rem 0 2rem;
+    gap: 2rem;
+}
+
+.search-bar input {
+    padding: 0.5rem;
+    width: 300px;
+}
+
+.events-list-container {
+    overflow: scroll;
+}
+
+.events-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+
+.events-search-bar-container .horizontal-divider {
+    margin-bottom: 0;
+}
+

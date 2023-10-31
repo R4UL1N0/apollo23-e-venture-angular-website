@@ -1,0 +1,20 @@
+<div class="event-container center">
+    <figure class="back-btn" (click)="onBackClick()">
+        <img src="../../../../../assets/img/back_arrow.png" alt="">
+    </figure>
+
+    <div class="event-header-info">
+        <div class="circle giant"></div>
+        <h1>Event</h1>
+    </div>
+
+    <div class="horizontal-divider"></div>
+    <div class="list--options">
+        <div class="list--unit" (click)="goToSection('feed')" [class.selected]="selectedSection === 'feed'">Feed</div>
+        <div class="list--unit" (click)="goToSection('activities')" [class.selected]="selectedSection === 'activities'">Activities</div>
+        <div class="list--unit" (click)="goToSection('treasures')" [class.selected]="selectedSection === 'treasures'">Treasures</div>
+        <div class="list--unit" (click)="goToSection('quizzes')" [class.selected]="selectedSection === 'quizzes'">Quizzes</div>
+        <div class="list--unit" (click)="goToSection('participants')" [class.selected]="selectedSection === 'participants'">Participants</div>
+        
+    </div>
+</div>

@@ -1,0 +1,11 @@
+<nav>
+    <div class="logo">
+        <h1>E-V</h1>
+    </div>
+    <div class="links">
+        <a routerLink="login" *ngIf="currentRoute === ''">Login</a>
+        <a routerLink="" *ngIf="currentRoute === 'user'">Logout</a>
+        <a routerLink="" *ngIf="currentRoute === 'admin'">Logout</a>
+        <a routerLink="" *ngIf="currentRoute === 'login'">Home</a>
+    </div>
+</nav>

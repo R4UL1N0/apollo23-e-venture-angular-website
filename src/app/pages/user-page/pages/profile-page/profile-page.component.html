@@ -1,0 +1,77 @@
+<div class="profile--page">
+
+    <div class="profile--header">
+
+        <div class="profile--header--edit">
+            <div class="circle tiny center"><p>✏️</p></div>
+        </div>
+
+        <div class="pic">
+            <div class="circle big"></div>
+        </div>
+
+        <div class="profile--info">
+            <h1>Name</h1>
+            <h3>Username</h3>
+        </div>
+
+        <div class="vertical-divider"></div>
+        
+        <div class="profile--participation">
+            <!-- <h1>Score:</h1> -->
+            <h2>10 Events</h2>
+            <h2>22 Activities</h2>
+            <h2>43 Treasures</h2>
+            <h2>4 Quizzes</h2>
+        </div>
+
+        <div class="vertical-divider"></div>
+
+        <div class="profile--social-media">
+
+            <figure class="linkedin">
+                <img src="../../../../../assets/img/linked_in.png" alt="Linked In">
+            </figure>
+
+            <figure class="twitter-x">
+                <img src="../../../../../assets/img/x_social_media.png" alt="Twitter X">
+            </figure>
+
+            <figure class="instagram">
+                <img src="../../../../../assets/img/instagram.png" alt="Instagram">
+            </figure>
+
+        </div>
+
+        <div class="vertical-divider"></div>
+
+        <div class="profile--score">
+            <h1>Score: 242</h1>
+        </div>
+
+        
+
+    </div>
+
+    <div class="horizontal-divider"></div>
+    <div class="list--options">
+        <div class="list--unit" (click)="goToSection('events')" [class.selected]="selectedSection === 'events'">Events</div>
+        <div class="list--unit" (click)="goToSection('progress')" [class.selected]="selectedSection === 'progress'">Progress</div>
+        <div class="list--unit" (click)="goToSection('quizzes')" [class.selected]="selectedSection === 'quizzes'">Quizzes</div>
+        <div class="list--unit" (click)="goToSection('friends')" [class.selected]="selectedSection === 'friends'">Friends</div>
+        <div class="list--unit" (click)="goToSection('interactions')" [class.selected]="selectedSection === 'interactions'">Interactions</div>
+        
+    </div>
+
+    <div class="selected-option-container">
+        <div class="selected-option-content">
+        
+            <app-events-content *ngIf="selectedSection === 'events'"></app-events-content>
+            <app-progress-content *ngIf="selectedSection === 'progress'"></app-progress-content>
+            <app-quizzes-content *ngIf="selectedSection === 'quizzes'"></app-quizzes-content>
+            <app-friends-content *ngIf="selectedSection === 'friends'"></app-friends-content>
+            <app-interactions-content *ngIf="selectedSection === 'interactions'"></app-interactions-content>
+    
+        </div>
+    </div>
+</div>

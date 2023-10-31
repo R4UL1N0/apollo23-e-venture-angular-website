@@ -1,1 +1,151 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://unpkg.com/leaflet@1.9.4/dist/leaflet.css");
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+}
+
+.single-page {
+    height: 100vh;
+}
+
+.night-sky-background {
+    background-image: url('./assets/img/ASY-SM0623_05.webp');
+    object-fit: cover; 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.galaxy-background {
+    background-image: url('./assets/img/galaxy.jpg');
+    object-fit: cover; 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nebula-background {
+    background-image: url('./assets/img/nebula-1.jpeg');
+    object-fit: cover; 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.end {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-text {
+    font-family: sans-serif;
+}
+
+
+.circle {
+    background-color: #333;
+    border-radius: 50%;
+}
+
+.tiny {
+    width: 50px;
+    aspect-ratio: 1;
+}
+
+.small {
+    width: 70px;
+    aspect-ratio: 1;
+}
+
+.medium {
+    width: 120px;
+    aspect-ratio: 1;
+}
+
+.big {
+    width: 150px;
+    aspect-ratio: 1;
+}
+
+.giant {
+    width: 250px;
+    aspect-ratio: 1;
+}
+
+.small-font {
+    font-size: 1rem;
+}
+
+.medium-font {
+    font-size: 3rem;
+}
+
+.big-font {
+    font-size: 5rem;
+}
+
+.horizontal-divider {
+    height: 1px;
+    width: 100%;
+    background-color: black;
+    margin: 1.5rem 0;
+}
+
+// WORK ON THAT HEIGHT
+.vertical-divider {
+    height: 100%;
+    width: 1px;
+    background-color: black;
+    margin: 1.5rem 0;
+}
+
+.m-10 {
+    margin: 10px;
+}
+
+.m-30-top {
+    margin-top: 30px;
+}
+
+.w-80 {
+    width: 80%;
+}
+
+::-webkit-scrollbar {
+    width: 0.5em; /* You can adjust this to make the scrollbar very narrow */
+    // background-color: black;
+}
+  
+::-webkit-scrollbar-thumb {
+background-color: #333; /* Hide the thumb */
+border-radius: 3px;
+}
+
+scroll {
+    overflow: scroll;
+}
